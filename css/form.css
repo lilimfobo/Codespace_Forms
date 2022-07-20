@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+    display:block;
+    margin: 30px
+}
+
+.submit {
+    height: 200px;
+    width: 200px;
+}
