@@ -8,17 +8,51 @@
     <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
+ <header>
     <h1>Registration Form</h1> 
-    <p>Please fill in the information required</p>
-    <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
+    <p>Please fill in the required information</p>
+ </header>
+    <form action="https://learn.codespace.co.za/dashboard">
     <fieldset>
-        <label>User id: <input type="text" required></label>
-        <label>Password: <input type="password" required></label>
+        <label>User id: <input type="text" required minlength="5" maxlength="12"></label>
+        <label>Password: <input type="password" required minlength="7" maxlength="12"></label>
         <label>Name: <input type="text" required></label>
         <label>Address: <input type="text"></label>
-        <label>Country: <input type="text" required></label>
+        <label>Country: 
+            <select required>
+                <option value="">Choose your country</option>
+                <option value="1">South Africa</option>
+                <option value="2">Botswana</option>
+                <option value="3">Lesotho</option>
+                <option value="4">Swaziland</option>
+                <option value="5">Zimbabwe</option>
+                <option value="6">Other</option>
+            </select>
+        </label>
+
         <label>ZIP Code: <input type="number" required></label>
-        <label>Email: <input type="email" required></label>
+        <label>Email: 
+            <input type="email" required></label>
+    </fieldset>
+    <fieldset class="second">
+        <label>Gender: 
+            <div>
+               <input type="radio" name="gender" class="inline" required>Male
+               <input type="radio" name="gender" class="inline" required>Female
+               <input type="radio" name="gender" class="inline" required>Non-binary
+            </div>
+        </label>
+        <label>Language: 
+            <div>
+               <input type="radio" name="language" class="inline" required>English
+               <input type="radio" name="language" class="inline" required>Non-English:
+            </div>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>About:
+            <textarea rows="8" cols="30"></textarea>
+        </label>
     </fieldset>
     <input type="submit" value="Submit">
 </form>
